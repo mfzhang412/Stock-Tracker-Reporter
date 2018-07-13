@@ -4,7 +4,7 @@ class Companies(DTI):
     '''This class handles data acquisition, data analysis, and data storage related to companies'''
 
     def scrape_web(self):
-    '''Scrape web'''
+        '''Scrape web'''
         pass
 
     def analyze_data(self):

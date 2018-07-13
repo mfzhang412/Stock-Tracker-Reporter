@@ -4,7 +4,7 @@ class News(DTI):
     '''This class handles data acquisition, data analysis, and data storage related to recent news'''
 
     def scrape_web(self):
-    '''Scrape web'''
+        '''Scrape web'''
         pass
 
     def analyze_data(self):

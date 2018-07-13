@@ -9,6 +9,11 @@ class Data_Transition_Interface(ABC):
         pass
 
     @abstractmethod
+    def store_data(self):
+        '''Store data'''
+        pass
+
+    @abstractmethod
     def analyze_data(self):
         '''Analyze data'''
         pass
