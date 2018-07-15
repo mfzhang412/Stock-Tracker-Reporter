@@ -2,14 +2,14 @@ from bs4 import BeautifulSoup
 from Report import Report
 
 class Stock_Tracker:
-    '''This class tracks and sends daily reports on specific stocksusing web scraping'''
+    '''This class tracks and sends daily reports on specific stocks using web scraping'''
     
     def grab_stocks(self):
         '''Grab stocks from the "Stock_Watchlist.txt" watchlist document'''
         pass
 
     def generate_report(self):
-        '''Formats data into readable and stylized report'''
+        '''Format data into readable and stylized report'''
         pass
 
     def send_report(self):
