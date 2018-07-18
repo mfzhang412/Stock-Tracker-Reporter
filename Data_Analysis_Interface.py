@@ -1,24 +1,24 @@
 from abc import ABC, abstractmethod
 
 class Data_Analysis_Interface(ABC):
-    '''This is an interface for the acquisition, analysis, and storage of data'''
+    """This is an interface for the acquisition, analysis, and storage of data"""
 
     @abstractmethod
     def scrape_web(self):
-        '''Scrape web'''
+        "””Scrape web for data”””
         pass
 
     @abstractmethod
     def store_data(self):
-        '''Store data'''
+        "””Store data from initial scraping”””
         pass
 
     @abstractmethod
     def analyze_data(self):
-        '''Analyze data'''
+        "””Perform calculations on initial scrape data”””
         pass
 
     @abstractmethod
     def store_analysis(self):
-        '''Store analyzed data'''
+        "””Store calculated data”””
         pass
