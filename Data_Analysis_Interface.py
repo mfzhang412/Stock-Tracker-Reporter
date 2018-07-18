@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Data_Transition_Interface(ABC):
+class Data_Analysis_Interface(ABC):
     '''This is an interface for the acquisition, analysis, and storage of data'''
 
     @abstractmethod

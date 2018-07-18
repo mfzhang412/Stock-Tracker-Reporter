@@ -1,6 +1,6 @@
-from Data_Transition_Interface import Data_Transition_Interface as DTI
+from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 
-class News(DTI):
+class News(DAI):
     '''This class handles data acquisition, data analysis, and data storage related to recent news'''
 
     def scrape_web(self):

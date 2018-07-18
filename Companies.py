@@ -1,6 +1,6 @@
-from Data_Transition_Interface import Data_Transition_Interface as DTI
+from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 
-class Companies(DTI):
+class Companies(DAI):
     '''This class handles data acquisition, data analysis, and data storage related to companies'''
 
     def scrape_web(self):
