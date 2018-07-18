@@ -1,0 +1,3 @@
+Apple, AAPL
+Amazon, AMZN
+Alphabet, ABC
