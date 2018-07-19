@@ -1,5 +1,5 @@
 from Company import Company
-from News import News
+from News_Article import News_Article
 from Portfolio import Portfolio
 
 class Report:

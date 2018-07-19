@@ -1,6 +1,6 @@
 from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 
-class News(DAI):
+class News_Article(DAI):
     """This class handles data acquisition, data analysis, and data storage related to a recent news article"""
     rel_data = None
     
