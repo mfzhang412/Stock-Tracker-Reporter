@@ -5,20 +5,20 @@ class Data_Analysis_Interface(ABC):
 
     @abstractmethod
     def scrape_web(self):
-        "””Scrape web for data”””
+        """Scrape web for data"""
         pass
 
     @abstractmethod
     def store_data(self):
-        "””Store data from initial scraping”””
+        """Store data from initial scraping"""
         pass
 
     @abstractmethod
     def analyze_data(self):
-        "””Perform calculations on initial scrape data”””
+        """Perform calculations on initial scrape data"""
         pass
 
     @abstractmethod
     def store_analysis(self):
-        "””Store calculated data”””
+        """Store calculated data"""
         pass
