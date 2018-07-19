@@ -4,12 +4,14 @@ from Report import Report
 class Stock_Tracker:
     """This class automates tracking specific stocks and sending daily reports"""
     ### Instance variables
-    # stock_list = []
+    # List[] stock_list
+    # Report report
 
     def __init__(self,file_loc='default'):
         """Initialize a Stock_Tracker object"""
         # gets the stocks currently in the file
         this.stock_list = this.grab_stocks(file_loc)
+        this.report = None
 
     def grab_stocks(self,file_name='default'):
         """Return stocks recorded in text file document"""
@@ -33,25 +35,30 @@ class Stock_Tracker:
     def create_report(self,template='default',save_loc='default'):
         """Create a formatted report with relevant information and save it"""
         # create Report object with relevant company, portfolio, and news data
-        report = Report()
+        rep = Report()
         #####report.gather_data_chunks()    should be part of Report __init__
         # populate report in the format of a chosen template
-        report.build_report(template)
+        rep.build_report(template)
+        this.report = rep.get_report()
         # save report in specified location
-        save_log = report.save_report(save_loc)
+        save_log = rep.save_report(save_loc)
         # return the log of the saved report
         return save_log
 
     def send_report(self,report_loc,time='default',comm_option='default'):
         """Load and send a saved report at a scheduled time"""
         # load report from location
-        report = load_report(report_loc)
+        rep = load_report(report_loc)
         # wait until scheduled time
-        report.wait_function(time)
+        rep.wait_function(time)
         # send report through the option chosen
-        send_log = report.issue_report(comm_option)
+        send_log = rep.issue_report(comm_option)
         # return the log of the sent report
         return send_log
+
+    def get_report(self):
+        """Return report attribute"""
+        return this.report
 
 
 
