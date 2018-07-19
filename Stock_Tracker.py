@@ -36,7 +36,6 @@ class Stock_Tracker:
         """Create a formatted report with relevant information and save it"""
         # create Report object with relevant company, portfolio, and news data
         rep = Report()
-        #####report.gather_data_chunks()    should be part of Report __init__
         # populate report in the format of a chosen template
         rep.build_report(template)
         this.report = rep.get_report()
