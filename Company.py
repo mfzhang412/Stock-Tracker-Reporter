@@ -3,21 +3,32 @@ from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 class Company(DAI):
     """This class handles data acquisition, data analysis, and data storage related to a company"""
     ### Instance variables
-    # String[] rel_urls
     # String company_name
     # String stock_symbol
-    # Company[] prev_data
+    # String[] urls
     # List[] rel_data
-    # String storage_loc
-    # String[] CEO_names
+    # String[] exec_names
     # String industry
+    # Company[] prev_data
+    # String storage_loc
     
-    def __init__(self,data_list):
+    def __init__(self,company_name,stock_symbol,urls,rel_data,exec_names,industry,prev_data,storage_loc):
         """Initialize Companies object"""
-        this.rel_data = data_list
+        this.company_name = company_name
+        this.stock_symbol = stock_symbol
+        this.urls = urls
+        this.rel_data = rel_data
+        this.exec_names = exec_names
+        this.industry = industry
+        this.prev_data = prev_data
+        this.storage_loc = storage_loc
 
-    def scrape_web(self,save_file):
-        """Access websites from save file and scrape them for relevant data"""
+    def access_urls(self):
+        """Access urls and load websites as objects"""
+        pass
+    
+    def grab_data(self,save_file):
+        """Scrape website objects for relevant data"""
         pass
 
     def store_data(self):

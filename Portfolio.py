@@ -3,18 +3,26 @@ from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 class Portfolio(DAI):
     """This class handles data acquisition, data analysis, and data storage related to a top performing stock portfolio"""
     ### Instance variables
-    # portfolio_name
+    # String name
+    # Company[] companies
     # String website
     # String storage_loc
     # List[] prev_data
-    # Company[] company_list
     
-    def __init__(self,data_list):
+    def __init__(self,name,companies,website,storage_loc,prev_data):
         """Initialize Portfolios object"""
-        this.rel_data = data_list
+        this.name = name
+        this.companies = companies
+        this.website = website
+        this.storage_loc = storage_loc
+        this.prev_data = prev_data
 
-    def scrape_web(self):
-        """Access websites from save file and scrape them for relevant data"""
+    def access_urls(self):
+        """Access urls and load websites as objects"""
+        pass
+    
+    def grab_data(self,save_file):
+        """Scrape website objects for relevant data"""
         pass
 
     def store_data(self):

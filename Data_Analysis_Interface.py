@@ -5,8 +5,13 @@ class Data_Analysis_Interface(ABC):
     """This is an interface for the acquisition, analysis, and storage of data"""
 
     @abstractmethod
-    def scrape_web(self):
-        """Scrape web for data"""
+    def access_urls(self):
+        """Access urls"""
+        pass
+
+    @abstractmethod
+    def grab_data(self):
+        """Scrape websites for data"""
         pass
 
     @abstractmethod
