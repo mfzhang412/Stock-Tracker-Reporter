@@ -7,7 +7,7 @@ class Report:
     ### Instance variables
     # Company[] companies
     # Portfolio[] portfolios
-    # News[] news
+    # News_Article[] news
     
     def __init__(self):
         """Initialize Report object"""
@@ -45,6 +45,22 @@ class Report:
     
     def store_report(self):
         """Save report to a designated folder"""
+        pass
+
+    def scrape_web(self):
+        """Access company, portfolio, and news websites and obtain relevant data"""
+        pass
+    
+    def store_data(self):
+        """Store data obtained from initial scraping"""
+        pass
+    
+    def analyze_data(self):
+        """Perform calculations on data obtained from initial scraping to obtain more data"""
+        pass
+    
+    def store_analysis(self):
+        """Store new data with the old data"""
         pass
     
     def load_report(self):

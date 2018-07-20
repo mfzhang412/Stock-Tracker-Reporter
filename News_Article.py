@@ -2,7 +2,14 @@ from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 
 class News_Article(DAI):
     """This class handles data acquisition, data analysis, and data storage related to a recent news article"""
-    rel_data = None
+    ### Instance variables
+    # String website
+    # String article_name
+    # String rep_agency
+    # String[] rel_keywords
+    # int num_views
+    # String storage_loc
+    # List[] prev_data
     
     def __init__(self,data_list):
         """Initialize News object"""

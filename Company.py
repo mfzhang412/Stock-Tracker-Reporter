@@ -2,7 +2,15 @@ from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 
 class Company(DAI):
     """This class handles data acquisition, data analysis, and data storage related to a company"""
-    rel_data = None
+    ### Instance variables
+    # String[] rel_urls
+    # String company_name
+    # String stock_symbol
+    # Company[] prev_data
+    # List[] rel_data
+    # String storage_loc
+    # String[] CEO_names
+    # String industry
     
     def __init__(self,data_list):
         """Initialize Companies object"""

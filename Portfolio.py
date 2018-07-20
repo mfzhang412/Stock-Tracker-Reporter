@@ -2,7 +2,12 @@ from Data_Analysis_Interface import Data_Analysis_Interface as DAI
 
 class Portfolio(DAI):
     """This class handles data acquisition, data analysis, and data storage related to a top performing stock portfolio"""
-    rel_data = None
+    ### Instance variables
+    # portfolio_name
+    # String website
+    # String storage_loc
+    # List[] prev_data
+    # Company[] company_list
     
     def __init__(self,data_list):
         """Initialize Portfolios object"""
